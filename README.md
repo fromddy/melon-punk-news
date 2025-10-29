@@ -1,4 +1,4 @@
-# Monad Farcaster MiniApp Template
+# Melon Punk
 
 The template demonstrates all Mini App capabilities and lets you easily modify it, so you can build Mini Apps.
 
@@ -92,7 +92,7 @@ const frame = {
     title: "Template", // Text on the embed button
     action: {
       type: "launch_frame",
-      name: "Monad Farcaster MiniApp Template",
+      name: "Melon Punk",
       url: appUrl, // URL that is opened when the embed button is tapped or clicked.
       splashImageUrl: `${appUrl}/images/splash.png`,
       splashBackgroundColor: "#f7f7f7",
@@ -108,8 +108,7 @@ You can either edit the URLs for the images or replace the images in `public/ima
 Once you are happy with the changes, click `Refetch` in the Embed tool to get the latest configuration.
 
 > [!NOTE]
-> If you are developing locally, ensure that your Next.js app is running locally and the cloudflare tunnel is open. 
-
+> If you are developing locally, ensure that your Next.js app is running locally and the cloudflare tunnel is open.
 
 ## Customizing the Splash Screen
 
@@ -131,7 +130,7 @@ const frame = {
     title: "Launch Template",
     action: {
       type: "launch_frame",
-      name: "Monad Farcaster MiniApp Template",
+      name: "Melon Punk",
       url: appUrl,
       splashImageUrl: `${appUrl}/images/splash.png`, // App icon in the splash screen (200px * 200px)
       splashBackgroundColor: "#f7f7f7", // Splash screen background color
@@ -150,7 +149,6 @@ Upon opening the template Mini App, you should see a screen like this:
 
 <img width="1512" alt="4" src="https://github.com/user-attachments/assets/259a3dd2-17ee-4afd-8942-ad83a92f6335" />
 
-
 The code for this screen is in the `components/pages/app.tsx` file:
 
 ```tsx
@@ -162,7 +160,7 @@ export default function Home() {
       {/* You replace the Demo component with your home component */}
       <Demo />
     </SafeAreaContainer>
-  )
+  );
 }
 ```
 
@@ -172,15 +170,14 @@ You can remove or edit the code in this file to build your Mini App.
 
 <img width="1130" alt="5" src="https://github.com/user-attachments/assets/4448c141-d159-4538-abda-a175d02330a7" />
 
-
 Your Mini App receives various information about the user, including `username`, `fid`, `displayName`, `pfpUrl` and other fields.
 
 The template provides a helpful hook `useMiniAppContext` that you can use to access these fields:
 
 ```js
 export function User() {
-    const { context } = useMiniAppContext();
-    return <p>{context.user.username}</p>
+  const { context } = useMiniAppContext();
+  return <p>{context.user.username}</p>;
 }
 ```
 
@@ -267,7 +264,7 @@ const farcasterConfig = {
     },
     frame: {
         version: "1",
-        name: "Monad Farcaster MiniApp Template",
+        name: "Melon Punk",
         iconUrl: `${appUrl}/images/icon.png`, // Icon of the app in the app store
         homeUrl: `${appUrl}`, // Default launch URL
         imageUrl: `${appUrl}/images/feed.png`, // Default image to show if shared in a feed.
@@ -275,7 +272,7 @@ const farcasterConfig = {
         tags: ["monad", "farcaster", "miniapp", "template"], // Descriptive tags for search
         primaryCategory: "developer-tools",
         buttonTitle: "Launch Template",
-        splashImageUrl: `${appUrl}/images/splash.png`, // URL of image to show on loading screen.	
+        splashImageUrl: `${appUrl}/images/splash.png`, // URL of image to show on loading screen.
         splashBackgroundColor: "#ffffff", // Hex color code to use on loading screen.
     }
 };
@@ -289,6 +286,6 @@ You can learn more about publishing the Mini App and other manifest properties [
 
 In this guide, you explored Farcaster Mini Apps — the simplest way to create engaging, high-retention, and easily monetizable applications!
 
-You also discovered the key capabilities of Mini Apps and how you can use the [Monad Farcaster MiniApp Template](https://github.com/monad-developers/monad-miniapp-template) to build your own.
+You also discovered the key capabilities of Mini Apps and how you can use the [Melon Punk](https://github.com/monad-developers/monad-miniapp-template) to build your own.
 
 For more details, check out the official Mini App documentation [here](https://miniapps.farcaster.xyz/).
