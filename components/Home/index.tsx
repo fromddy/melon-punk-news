@@ -14,7 +14,7 @@ export function Demo() {
 
   const logoURL = APP_URL + "/images/icon.png";
   return (
-    <div className="flex flex-col h-screen overflow-x-hidden bg-yellow-50">
+    <div className="flex flex-col h-screen overflow-x-hidden" style={{ backgroundColor: '#ffde5a' }}>
 
 
       <header className="flex-shrink-0 p-6 bg-yellow-200 border-b border-yellow-400 shadow-sm sticky top-0 z-10">
@@ -32,6 +32,9 @@ export function Demo() {
           >
             Melon Punk News
           </h1>
+        </div>
+        <div>
+          <h1> Advertising Space for Rent 🪧 </h1>
         </div>
       </header>
 

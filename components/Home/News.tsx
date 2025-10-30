@@ -13,47 +13,47 @@ type NewsItem = {
 // 示例新闻数据（日期精确到分钟）
 const newsData: NewsItem[] = [
     {
-        id: 2,
-        title: "本地猫咪当选市长",
-        summary: "小镇举行选举，意外选出一只长毛猫担任市长。居民表示‘终于有个会喵的领导了’。",
-        url: "https://example.com/funny-news2",
-        date: "2025-10-29T12:30:00",
+        id: 1,
+        title: "Monad Airdrop",
+        summary: "Monad airdrop results finally revealed",
+        url: "https://claim.monad.xyz",
+        date: "2025-10-30T21:30:00",
     },
-    {
-        id: 3,
-        title: "外星人要求加入朋友圈",
-        summary: "据报道，一艘不明飞行物在市中心降落，并请求注册当地社交平台账号。网友评论：‘终于可以互发朋友圈了’。",
-        url: "https://example.com/funny-news3",
-        date: "2025-10-29T13:15:00",
-    },
-    {
-        id: 4,
-        title: "冰淇淋被判非法占用",
-        summary: "法院裁定，夏日冰淇淋摊占用了‘清凉权’，必须立刻撤柜。摊主表示：‘我只是想帮大家消暑啊’。",
-        url: "https://example.com/funny-news4",
-        date: "2025-10-29T14:00:00",
-    },
-    {
-        id: 5,
-        title: "机器人举办脱口秀",
-        summary: "AI 机器人在本地咖啡馆表演脱口秀，其冷幽默让观众既哭笑不得又点赞刷屏。",
-        url: "https://example.com/funny-news5",
-        date: "2025-10-29T15:45:00",
-    },
-    {
-        id: 6,
-        title: "面包成为新货币",
-        summary: "由于通货膨胀，某国宣布面包为法定货币。市民排队买吐司，笑称‘终于可以用早餐付房租了’。",
-        url: "https://example.com/funny-news6",
-        date: "2025-10-29T16:30:00",
-    },
-    {
-        id: 7,
-        title: "鸭子入侵地铁",
-        summary: "一群野鸭闯入地铁站，乘客全程录视频上传社交媒体。官方提醒：‘请保持安静，让鸭子上班’。",
-        url: "https://example.com/funny-news7",
-        date: "2025-10-29T17:15:00",
-    },
+    // {
+    //     id: 3,
+    //     title: "外星人要求加入朋友圈",
+    //     summary: "据报道，一艘不明飞行物在市中心降落，并请求注册当地社交平台账号。网友评论：‘终于可以互发朋友圈了’。",
+    //     url: "https://example.com/funny-news3",
+    //     date: "2025-10-29T13:15:00",
+    // },
+    // {
+    //     id: 4,
+    //     title: "冰淇淋被判非法占用",
+    //     summary: "法院裁定，夏日冰淇淋摊占用了‘清凉权’，必须立刻撤柜。摊主表示：‘我只是想帮大家消暑啊’。",
+    //     url: "https://example.com/funny-news4",
+    //     date: "2025-10-29T14:00:00",
+    // },
+    // {
+    //     id: 5,
+    //     title: "机器人举办脱口秀",
+    //     summary: "AI 机器人在本地咖啡馆表演脱口秀，其冷幽默让观众既哭笑不得又点赞刷屏。",
+    //     url: "https://example.com/funny-news5",
+    //     date: "2025-10-29T15:45:00",
+    // },
+    // {
+    //     id: 6,
+    //     title: "面包成为新货币",
+    //     summary: "由于通货膨胀，某国宣布面包为法定货币。市民排队买吐司，笑称‘终于可以用早餐付房租了’。",
+    //     url: "https://example.com/funny-news6",
+    //     date: "2025-10-29T16:30:00",
+    // },
+    // {
+    //     id: 7,
+    //     title: "鸭子入侵地铁",
+    //     summary: "一群野鸭闯入地铁站，乘客全程录视频上传社交媒体。官方提醒：‘请保持安静，让鸭子上班’。",
+    //     url: "https://example.com/funny-news7",
+    //     date: "2025-10-29T17:15:00",
+    // },
 ];
 
 export function News() {

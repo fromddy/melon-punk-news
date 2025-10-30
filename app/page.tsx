@@ -12,7 +12,7 @@ const frame = {
       name: 'A maverick media outlet.',
       url: APP_URL,
       splashImageUrl: `${APP_URL}/images/splash.png`,
-      splashBackgroundColor: 'yellow',
+      splashBackgroundColor: '#ffde5a',
     },
   },
 }
