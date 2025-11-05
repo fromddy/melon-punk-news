@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <SafeAreaContainer insets={context?.client.safeAreaInsets}>
-      <Demo />
+      <Demo insets={context?.client.safeAreaInsets} />
     </SafeAreaContainer>
   )
 }
