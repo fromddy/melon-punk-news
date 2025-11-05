@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import { FarcasterActions } from '@/components/Home/FarcasterActions'
 import { User } from '@/components/Home/User'
 import { WalletActions } from '@/components/Home/WalletActions'
@@ -21,8 +22,32 @@ export function Demo({ insets }: { insets?: SafeAreaInsets }) {
     marginRight: insets?.right ? `-${insets.right}px` : 0,
   };
 
+  useEffect(() => {
+    // Prevent body scroll
+    const preventScroll = (e: TouchEvent) => {
+      const target = e.target as HTMLElement;
+      const mainElement = document.querySelector('main[class*="overflow-y-auto"]');
+      
+      // Only allow scrolling within the main element
+      if (mainElement && mainElement.contains(target)) {
+        return;
+      }
+      
+      // Prevent scrolling on body
+      if (!target.closest('main[class*="overflow-y-auto"]')) {
+        e.preventDefault();
+      }
+    };
+
+    document.body.addEventListener('touchmove', preventScroll, { passive: false });
+    
+    return () => {
+      document.body.removeEventListener('touchmove', preventScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col h-screen w-screen overflow-x-hidden" style={{ backgroundColor: '#ffde5a', ...negativeMargin }}>
+    <div className="flex flex-col h-full w-full overflow-hidden" style={{ backgroundColor: '#ffde5a', ...negativeMargin }}>
 
 
       <header className="flex-shrink-0 py-6 px-4 border-b border-yellow-400 shadow-sm sticky top-0 z-10" style={{ backgroundColor: '#ffde5a' }}>
@@ -44,7 +69,7 @@ export function Demo({ insets }: { insets?: SafeAreaInsets }) {
       </header>
 
       {/* Scrollable news area */}
-      <main className="flex-1 overflow-auto w-full">
+      <main className="flex-1 overflow-y-auto overflow-x-hidden w-full" style={{ overscrollBehavior: 'contain', WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}>
         <div className="w-full space-y-6 px-4 sm:px-6 py-4">
           <News />
         </div>
