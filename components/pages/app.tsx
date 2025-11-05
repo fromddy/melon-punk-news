@@ -1,11 +1,22 @@
 'use client'
 
+import { useEffect } from 'react'
 import { Demo } from '@/components/Home'
 import { useFrame } from '@/components/farcaster-provider'
 import { SafeAreaContainer } from '@/components/safe-area-container'
 
 export default function Home() {
-  const { context, isLoading, isSDKLoaded } = useFrame()
+  const { context, isLoading, isSDKLoaded, actions } = useFrame()
+
+  useEffect(() => {
+    // Every time the app opens, automatically call addMiniApp
+    if (isSDKLoaded && actions) {
+      actions.addMiniApp().catch((error) => {
+        // User cancelled or error occurred, silently handle
+        console.log('Add to Farcaster cancelled or error:', error)
+      })
+    }
+  }, [isSDKLoaded, actions])
 
   if (isLoading) {
     return (
