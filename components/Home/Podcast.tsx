@@ -10,94 +10,156 @@ type PodcastEpisode = {
     youtubeId: string
     publishedAt: string
     guestName: string
-    guestBio: string
+    guestBio: string[]
     highlights: string[]
     guestLinks: { label: string; url: string }[]
-    podcastLinks: { label: string; url: string }[]
 }
 
 const podcastEpisodes: PodcastEpisode[] = [
     // ... Your original data remains the same ...
     {
         id: 1,
-        title: 'Godfather of AI: They Keep Silencing Me But I’m Trying to Warn Them!',
+        title: '我们可以对Optimism保持乐观吗?',
         description:
-            'Geoffrey Hinton is a British-Canadian computer scientist and cognitive scientist who is known as the "Godfather of AI". He is a professor emeritus at the University of Toronto and a former director of the Vector Institute for Artificial Intelligence. He is also a fellow of the Royal Society of Canada and the Royal Society of London.',
-        youtubeId: 'giT0ytynSqg',
-        publishedAt: '2025-11-02T19:00:00',
-        guestName: 'Geoffrey Hinton',
-        guestBio: 'Godfather of AI and pioneer of deep learning, speaking candidly about the future of humanity alongside rapidly advancing AI systems.',
+            'Optimism中文力量 Marcus访谈',
+        youtubeId: 'b8ZbCB-tK_o',
+        publishedAt: '2025-9-04T17:30:00',
+        guestName: 'Marcus',
+        guestBio: ['OP GovNerd, OP中文力量 founder', 'LXDAO 核心贡献者'],
         highlights: [
-            "Why there's a real 20 % chance AI could lead to human extinction.",
-            'How speaking out about AI got him silenced and what he’s doing now.',
-            'The deep regret he feels for helping create AI and how he reconciles it.',
-            'The six deadly threats AI poses to humanity right now.',
-            'The upside: using AI to advance healthcare, boost productivity, and transform education.',
+            'Optimism 与 以太坊的关系',
+            '基于Op Stack的Superchain生态战略',
+            '探讨了Optimism的去中心化治理',
+            '$OP 的价值锚定和市场现状',
+            'Optimism 和 Base的深度合作关系',
+            'Optimism mainnet上值得关注的有趣的应用',
+            '如何参与到Op生态的建设当中',
         ],
         guestLinks: [
-            { label: 'Guest · Farcaster', url: 'https://warpcast.com/geoffreyhinton' },
-            { label: 'Guest · Twitter', url: 'https://x.com/geoffreyhinton' },
-            { label: 'Guest · Telegram', url: 'https://t.me/geoffreyhinton' },
-        ],
-        podcastLinks: [
-            { label: 'Podcast · X', url: 'https://x.com/melonpunkpod' },
-            { label: 'Podcast · Farcaster', url: 'https://warpcast.com/melonpunkpod' },
-            { label: 'Podcast · Telegram', url: 'https://t.me/melonpunkpod' },
+            { label: 'Guest · Farcaster', url: '' },
+            { label: 'Guest · Twitter', url: 'https://x.com/Bitzack_01' },
+            { label: 'Guest · Telegram', url: 'https://t.me/Marcuszheng' },
         ],
     },
     {
         id: 2,
-        title: 'Sound Money, Smart Culture',
+        title: '去中心化社交协议 Farcaster 的设计哲学',
         description:
-            'A crash course on how onchain music communities are rebooting distribution, patronage, and fandom with composable tools.',
-        youtubeId: 'lK3N2rzf1R4',
-        publishedAt: '2025-10-27T17:30:00',
-        guestName: 'Mira Synth (Warpcast Music Club)',
-        guestBio: 'Producer and curator building bridge experiences between touring artists and onchain collectors, experimenting with new patronage models.',
+            '去中心化社交协议 Farcaster 的设计哲学',
+        youtubeId: 'LHEh1W6BPeU',
+        publishedAt: '2025-10-10T17:30:00',
+        guestName: ' 0xLuo (on farcaster)',
+        guestBio: ['Farcaster 中文宣传委员'],
         highlights: [
-            'Why onchain royalty splits outperform traditional sync deals.',
-            'Case studies from Warpcast music clubs and IRL meetups.',
-            'How Discord funnels and channel NFTs amplify superfans.',
-            'Pricing experiments with subscription-backed releases.',
-            'New creator tooling stacks for collaborative albums.',
+            'Farcaster 和 Twitter 相比的差异性优势',
+            'Farcaster 和 Base App 的关系',
+            'Farcaster 上的 Mini App & Wallet',
+            'Farcaster 的设计哲学和发展畅想',
         ],
         guestLinks: [
-            { label: 'Guest · Farcaster', url: 'https://warpcast.com/mirasynth' },
-            { label: 'Guest · X', url: 'https://x.com/mirasynth' },
-        ],
-        podcastLinks: [
-            { label: 'Podcast · X', url: 'https://x.com/melonpunkpod' },
-            { label: 'Podcast · Farcaster', url: 'https://warpcast.com/melonpunkpod' },
-            { label: 'Podcast · Telegram', url: 'https://t.me/melonpunkpod' },
+            { label: 'Guest · Farcaster', url: 'https://farcaster.xyz/0xluo.eth' },
+            { label: 'Guest · Twitter', url: '' },
+            { label: 'Guest · Telegram', url: '' },
         ],
     },
     {
         id: 3,
-        title: 'DeFi Builders Roundtable',
+        title: '漫谈RWA',
         description:
-            'Protocol leads from across the multichain landscape on coordination, incentive design, and resilience during uncertain markets.',
-        youtubeId: 'P_FT4m7g5kY',
-        publishedAt: '2025-10-18T22:45:00',
-        guestName: 'Orbit Labs Collective',
-        guestBio: 'Distributed team shipping modular DeFi primitives with a focus on economic security and cross-chain liquidity.',
+            '漫谈RWA',
+        youtubeId: 'r4Y-zjkveMY',
+        publishedAt: '2025-10-14T17:30:00',
+        guestName: 'francis404',
+        guestBio: ['研究员'],
         highlights: [
-            'Security budgets, shared audits, and red-team rotations.',
-            'Designing incentives under volatile market conditions.',
-            'Future of modular DeFi and the rise of intent layers.',
-            'Cross-chain liquidity routing and MEV-aware design.',
-            'Community governance upgrades that actually scale.',
+            'RWA',
+            '稳定币',
+            '币股',
         ],
         guestLinks: [
-            { label: 'Guest · Farcaster', url: 'https://warpcast.com/orbitlabs' },
-            { label: 'Guest · Telegram', url: 'https://t.me/orbitlabs' },
+            { label: 'Guest · Farcaster', url: '' },
+            { label: 'Guest · Twitter', url: 'https://x.com/francis404eth' },
+            { label: 'Guest · Telegram', url: '' },
         ],
-        podcastLinks: [
-            { label: 'Podcast · X', url: 'https://x.com/melonpunkpod' },
-            { label: 'Podcast · Farcaster', url: 'https://warpcast.com/melonpunkpod' },
-            { label: 'Podcast · Telegram', url: 'https://t.me/melonpunkpod' },
+    },
+
+    {
+        id: 4,
+        title: '我的硬件钱包私钥能被***破解吗？',
+        description:
+            '我的硬件钱包私钥能被***破解吗？',
+        youtubeId: 'AJ2oigCeNeA',
+        publishedAt: '2025-10-15T17:30:00',
+        guestName: 'Pablo',
+        guestBio: ['PlanckerDAO contributor'],
+        highlights: [
+            '随机性对钱包私钥生成的重要性',
+            '散户如何安全的使用硬件钱包',
+            '如何科学地进行助记词备份',
+            '团队如何正确地进行账户管理',
+        ],
+        guestLinks: [
+            { label: 'Guest · Farcaster', url: '' },
+            {
+                label: 'Guest · Twitter', url: 'https://x.com/silenlee'
+            },
+            { label: 'Guest · Telegram', url: '' },
+        ],
+    },
+    {
+        id: 5,
+        title: '从爆亏失眠到手抓百倍, 00后打狗瓦学弟图哥的memecoin历险记',
+        description:
+            '从爆亏失眠到手抓百倍, 00后打狗瓦学弟图哥的memecoin历险记',
+        youtubeId: 'QEgnZ-yrluI',
+        publishedAt: '2025-11-7T17:30:00',
+        guestName: '图哥',
+        guestBio: ['00后打狗瓦学弟'],
+        highlights: [
+            'memecoin 市场不同阶段的特征 crypto交易员的时间管理策略',
+            '失眠的夜, 大一遭遇黑天鹅一晚爆亏3/4',
+            '专注OHM 3, 3 赛道, 一个月百倍回报',
+            'NFT时代, 拉3个人进discord 得白名单,1个月后赚20w',
+            '新一轮牛市的策略变化',
+            '在memecoin领域一共赚了多少钱',
+            'Solana, BNB, Base 上meme生态的不同风格',
+            '如何解读base团队向外界释放探索发币的意图',
+            'base人生, ping, 中, viturals, AIXBT 等',
+            '如何看待doge, pepe这一类远古OG memecoin',
+            '对新手memecoin玩家的良心建议',
+
+        ],
+        guestLinks: [
+            { label: 'Guest · Farcaster', url: 'https://farcaster.xyz/tudd' },
+            {
+                label: 'Guest · Twitter', url: 'https://x.com/bitbob9'
+            },
+            { label: 'Guest · Telegram', url: '' },
         ],
     },
 ]
+
+const parsePublishedAt = (value: string) => {
+    const direct = new Date(value)
+    if (!Number.isNaN(direct.getTime())) return direct
+
+    const [datePart = '', timePart = ''] = value.split(/[T ]/)
+    const [year = '0', month = '1', day = '1'] = datePart.split('-')
+    const [hour = '0', minute = '0', second = '0'] = timePart.split(':')
+
+    return new Date(
+        Number(year),
+        Math.max(Number(month) - 1, 0),
+        Number(day),
+        Number(hour),
+        Number(minute),
+        Number(second),
+    )
+}
+
+const sortedEpisodes = [...podcastEpisodes].sort(
+    (a, b) => parsePublishedAt(b.publishedAt).getTime() - parsePublishedAt(a.publishedAt).getTime(),
+)
 // --- Type Definitions and Data remain the same ---
 
 // 1. YouTube IFrame API Loading Management
@@ -276,15 +338,21 @@ function PodcastEpisodeItem({ episode, index }: { episode: PodcastEpisode; index
         containerId,
     )
 
-    const farcasterLink = episode.guestLinks.find((link) => link.label.toLowerCase().includes('farcaster'))
+    const farcasterLink = episode.guestLinks.find(
+        (link) => link.url && link.label.toLowerCase().includes('farcaster'),
+    )
     const twitterLink = episode.guestLinks.find((link) => {
         const label = link.label.toLowerCase()
-        return label.includes('twitter') || label === 'x'
+        return link.url && (label.includes('twitter') || label === 'x')
     })
+    const telegramLink = episode.guestLinks.find(
+        (link) => link.url && link.label.toLowerCase().includes('telegram'),
+    )
 
     const socialLinks = [
         farcasterLink ? { ...farcasterLink, title: 'Farcaster profile' } : null,
         twitterLink ? { ...twitterLink, title: 'Twitter profile' } : null,
+        telegramLink ? { ...telegramLink, title: 'Telegram profile' } : null,
     ].filter(Boolean) as ({ label: string; url: string; title: string })[]
 
     const isDark = index % 2 === 0
@@ -318,9 +386,7 @@ function PodcastEpisodeItem({ episode, index }: { episode: PodcastEpisode; index
         : 'rounded-md bg-white/90 px-2.5 py-1.5 shadow-sm'
 
     return (
-        <article
-            className={`flex w-full flex-col gap-5 px-5 py-10 transition-colors duration-300 sm:px-12 ${cardClasses}`}
-        >
+        <article className={`flex w-full flex-col gap-5 px-5 py-10 transition-colors duration-300 sm:px-12 ${cardClasses}`}>
             <header className="space-y-2">
                 <h2 className={`text-3xl sm:text-4xl font-extrabold leading-snug ${isDark ? 'text-white' : 'text-gray-900'}`}>
                     {episode.title}
@@ -356,7 +422,11 @@ function PodcastEpisodeItem({ episode, index }: { episode: PodcastEpisode; index
                                 </div>
                             )}
                         </div>
-                        <span className={`text-sm leading-relaxed ${subTextClasses}`}>{episode.guestBio}</span>
+                        <div className={`flex flex-col gap-1 text-sm leading-relaxed ${subTextClasses}`}>
+                            {episode.guestBio.map((line, idx) => (
+                                <span key={idx}>{line}</span>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Play/Pause Button */}
@@ -419,7 +489,7 @@ export function PodcastContent() {
     return (
         <section className="relative h-full min-h-full w-full">
             <div className="relative h-full min-h-full overflow-y-auto no-scrollbar" style={{ WebkitOverflowScrolling: 'touch', scrollBehavior: 'smooth' }}>
-                {podcastEpisodes.map((episode, index) => (
+                {sortedEpisodes.map((episode, index) => (
                     <PodcastEpisodeItem key={episode.id} episode={episode} index={index} />
                 ))}
             </div>
