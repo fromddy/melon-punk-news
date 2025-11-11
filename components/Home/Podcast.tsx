@@ -137,6 +137,39 @@ const podcastEpisodes: PodcastEpisode[] = [
             { label: 'Guest · Telegram', url: '' },
         ],
     },
+    {
+        id: 6,
+        title: 'Uniswap v4 深入浅出',
+        description:
+            'Uniswap v4 深入浅出',
+        youtubeId: 'JbMuSWJy97w',
+        publishedAt: '2025-11-11T17:30:00',
+        guestName: 'wongSSH',
+        guestBio: ['DeFi 合约工程师', '项目获得了uniswap foundation的grant'],
+        highlights: [
+            'uniswap 的基本功能',
+            'uniswap v0, v1, v2, v3 版本的迭代',
+            'v1 开始支持一个流动性池中有多个流动性提供者',
+            'v2开始支持任意两种代币组池子',
+            'v3比v2复杂特别多, 提供设置区间流动性的功能',
+            '无常损失',
+            '自动做市商 和 订单簿 的对比',
+            'uniswap 和 hyperliquid 的区别',
+            '永续合约',
+            'hyperliquid 和 中心化交易所 的区别',
+            'uniswap v4 的架构和工程上的优化',
+            ' - 单体架构(Singleton)',
+            ' - 重新引入了原生ETH',
+            ' - 闪电记账系统 flash accounting ',
+            'uniswap v4 Hooks ',
+            '普通用户如何防范常见的风险',
+        ],
+        guestLinks: [
+            { label: 'Guest · Farcaster', url: '' },
+            { label: 'Guest · Twitter', url: 'https://x.com/wong_ssh' },
+            { label: 'Guest · Telegram', url: '' },
+        ],
+    },
 ]
 
 const parsePublishedAt = (value: string) => {
